@@ -1,7 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <string name="hello">Hello World, VTritionActivity!</string>
     <string name="app_name">VTrition</string>
-
+    
+    <string name="menu_refresh">Refresh</string>
+    <string name="menu_search">Search</string>
+    <string name="menu_share">Share</string>
 </resources>
