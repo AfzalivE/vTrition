@@ -13,7 +13,7 @@ import android.widget.TextView;
 public final class MFragment extends Fragment {
 	private static final String KEY_CONTENT = "TestFragment:Content";
 	
-	public static MFragment newInstance(String content) {
+	public static MFragment newInstance(int content) {
 		MFragment fragment = new MFragment();
 
 		StringBuilder builder = new StringBuilder();

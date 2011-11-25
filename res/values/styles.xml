@@ -15,7 +15,7 @@
   -->
 
 <resources>
-
+    
     <style name="AppTheme" parent="android:style/Theme.Light">
         <item name="android:windowTitleSize">@dimen/actionbar_compat_height</item>
         <item name="android:windowTitleBackgroundStyle">@style/ActionBarCompat</item>
@@ -26,6 +26,9 @@
         <item name="actionbarCompatItemStyle">@style/ActionBarCompatItem</item>
         <item name="actionbarCompatItemHomeStyle">@style/ActionBarCompatHomeItem</item>
         <item name="actionbarCompatProgressIndicatorStyle">@style/ActionBarCompatProgressIndicator</item>
+        
+        <item name="vpiTabPageIndicatorStyle">@style/Widget.TabPageIndicator</item>
+<!--         <item name="vpiTabTextStyle">@style/Widget.TabPageIndicator.Text</item> -->
     </style>
 
     <style name="ActionBarCompat">

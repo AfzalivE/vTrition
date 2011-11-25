@@ -19,9 +19,10 @@ package com.vt.vtrition.utils;
 import android.app.Activity;
 import android.os.Build;
 import android.os.Bundle;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuInflater;
+
+import com.vt.vtrition.R;
 
 /**
  * An abstract class that handles some common action bar-related functionality in the app. This
@@ -42,7 +43,6 @@ public abstract class ActionBarHelper {
      */
     public static ActionBarHelper createInstance(Activity activity) {
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.ICE_CREAM_SANDWICH) {
-        	Log.d("vT", "ICS detected");
             return new ActionBarHelperICS(activity);
         } else if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.HONEYCOMB) {
             return new ActionBarHelperHoneycomb(activity);

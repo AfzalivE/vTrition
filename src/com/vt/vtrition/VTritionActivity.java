@@ -1,7 +1,7 @@
 package com.vt.vtrition;
 
-import com.viewpagerindicator.TitlePageIndicator;
-import com.vt.vtrition.MTitleFragmentAdapter;
+import com.viewpagerindicator.TabPageIndicator;
+import com.vt.vtrition.utils.MTabsFragmentAdapter;
 
 import android.os.Bundle;
 import android.support.v4.view.ViewPager;
@@ -13,15 +13,16 @@ public class VTritionActivity extends BaseActivity {
 	@Override
 	protected void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
-		setContentView(R.layout.simple_titles);
+		setContentView(R.layout.simple_tabs);
 		
-		mAdapter = new MTitleFragmentAdapter(getSupportFragmentManager());
+		mAdapter = new MTabsFragmentAdapter(getSupportFragmentManager());
 		
 		mPager = (ViewPager)findViewById(R.id.pager);
 		mPager.setAdapter(mAdapter);
 		
-		TitlePageIndicator indicator = (TitlePageIndicator)findViewById(R.id.indicator);
+		TabPageIndicator indicator = (TabPageIndicator)findViewById(R.id.indicator);
 		indicator.setViewPager(mPager);
+		
 	}
 	
     @Override
