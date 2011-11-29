@@ -10,14 +10,14 @@ import android.widget.LinearLayout;
 import android.widget.LinearLayout.LayoutParams;
 import android.widget.TextView;
 
-public final class MFragment extends Fragment {
+public final class DayFragment extends Fragment {
 	private static final String KEY_CONTENT = "TestFragment:Content";
 	
-	public static MFragment newInstance(int content) {
-		MFragment fragment = new MFragment();
+	public static DayFragment newInstance(int content) {
+		DayFragment fragment = new DayFragment();
 
 		StringBuilder builder = new StringBuilder();
-		for (int i = 0; i < 20; i++) {
+		for (int i = 0; i < 10; i++) {
 			builder.append(content).append(" ");
 		}
 		builder.deleteCharAt(builder.length() - 1);
